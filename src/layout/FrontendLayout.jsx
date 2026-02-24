@@ -10,6 +10,8 @@ function FrontendLayout() {
                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                 <Link className="nav-link" to="products">Products</Link>
                 <Link className="nav-link" to="cart">Cart</Link>
+                <Link className="nav-link" to="checkout">Checkout</Link>
+                <Link className="nav-link" to="login">Login</Link>
                 <Link className="nav-link disabled" aria-disabled="true">願望清單</Link>
               </div>
             </div>

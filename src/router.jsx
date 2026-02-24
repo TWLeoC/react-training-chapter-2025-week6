@@ -6,7 +6,7 @@ import SingleProduct from "./views/front/SingleProduct";
 import Cart from "./views/front/Cart";
 import NotFound from "./views/front/NotFound";
 import Checkout from "./views/front/Checkout";
-import Login from "./views"
+import Login from "./views/Login";
 
 
 export const router = createHashRouter([

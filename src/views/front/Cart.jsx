@@ -108,8 +108,13 @@ function Cart() {
                       className="form-control"
                       aria-label="Sizing example input"
                       aria-describedby="inputGroup-sizing-sm"
-                      defaultValue={cartItem.qty}
-                      onChange={(e) => updateCart(cartItem.id, cartItem.product_id, Number(e.target.value))}
+                      value={cartItem.qty}
+                      onChange={(e) => {
+                        const nextQty = Number(e.target.value);
+                        if (nextQty >= 1) {
+                          updateCart(cartItem.id, cartItem.product_id, nextQty);
+                        }
+                      }}
                     />
                     <span className="input-group-text" id="inputGroup-sizing-sm">
                     {cartItem.product.unit}
